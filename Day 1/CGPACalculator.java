@@ -20,8 +20,11 @@ public class CGPACalculator {
         System.out.print("Enter marks for Subject 5: ");
         float subject5Marks = scanner.nextFloat();
 
+        System.out.print("Enter marks for Subject 6: ");
+        float subject6Marks = scanner.nextFloat();
+
         // Calculate the CGPA (assuming a maximum possible CGPA of 10)
-        float cgpa = (subject1Marks + subject2Marks + subject3Marks + subject4Marks + subject5Marks) / 10;
+        float cgpa = (subject1Marks + subject2Marks + subject3Marks + subject4Marks + subject5Marks+ subject6Marks) / 60;
 
         // Display the CGPA
         System.out.println("Your CGPA is: " + cgpa);
