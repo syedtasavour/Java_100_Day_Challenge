@@ -1,11 +1,11 @@
 import java.util.*;
 
-public class StringManipulation {
+public class StringManipulation{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         // Prompt the user to enter their name
-        System.out.println("Enter Your Name");
+        System.out.print("Enter Your Name: ");
         String enteredName = scanner.nextLine();
 
         // Print the entered name
