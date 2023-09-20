@@ -20,12 +20,12 @@ public class ExamResults {
         // Check if the student passed all subjects
         if (subject1Marks >= 33 && subject2Marks >= 33 && subject3Marks >= 33) {
             System.out.println("Congratulations! You have passed all subjects with the following percentages:\n" +
-                    "Subject 1: " + subject1Marks + "\nSubject 2: " + subject2Marks + "\nSubject 3: " + subject3Marks +
-                    "\nTotal Percentage: " + totalPercentage);
+                    "Subject 1: " + subject1Marks +"%" + "\nSubject 2: " + subject2Marks + "%"+"\nSubject 3: " + subject3Marks +"%"+
+                    "\nTotal Percentage: " + totalPercentage+"%");
         } else {
             System.out.println("You have not passed all the subjects. Here are the percentages:\n" +
-                    "Subject 1: " + subject1Marks + "\nSubject 2: " + subject2Marks + "\nSubject 3: " + subject3Marks +
-                    "\nTotal Percentage: " + totalPercentage);
+                    "Subject 1: " + subject1Marks +"%"+ "\nSubject 2: " + subject2Marks +"%"+ "\nSubject 3: " + subject3Marks +"%"+
+                    "\nTotal Percentage: " + totalPercentage+"%");
         }
     }
 }
