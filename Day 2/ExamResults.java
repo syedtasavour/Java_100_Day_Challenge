@@ -17,15 +17,23 @@ public class ExamResults {
         // Calculate the total percentage
         double totalPercentage = (subject1Marks + subject2Marks + subject3Marks) * 100 / (100 * 3);
 
-        // Check if the student passed all subjects
-        if (subject1Marks >= 33 && subject2Marks >= 33 && subject3Marks >= 33) {
-            System.out.println("Congratulations! You have passed all subjects with the following percentages:\n" +
-                    "Subject 1: " + subject1Marks +"%" + "\nSubject 2: " + subject2Marks + "%"+"\nSubject 3: " + subject3Marks +"%"+
-                    "\nTotal Percentage: " + totalPercentage+"%");
+        // Check if the student passed all subjects and achieved a total percentage above 40%
+        if (subject1Marks >= 33 && subject2Marks >= 33 && subject3Marks >= 33 && totalPercentage >= 40) {
+            System.out.println("Congratulations! You have passed all subjects and achieved a total percentage above 40% with the following percentages:\n" +
+                    "Subject 1: " + subject1Marks + "%" + "\nSubject 2: " + subject2Marks + "%" + "\nSubject 3: " + subject3Marks + "%" +
+                    "\nTotal Percentage: " + totalPercentage + "%");
+
+        // Check if the student passed all subjects but did not achieve a total percentage above 40%
+        } else if (subject1Marks >= 33 && subject2Marks >= 33 && subject3Marks >= 33) {
+            System.out.println("Congratulations! You have passed all subjects but did not achieve a total percentage above 40% with the following percentages:\n" +
+                    "Subject 1: " + subject1Marks + "%" + "\nSubject 2: " + subject2Marks + "%" + "\nSubject 3: " + subject3Marks + "%" +
+                    "\nTotal Percentage: " + totalPercentage + "%");
+
+        // Student has not passed all the subjects
         } else {
             System.out.println("You have not passed all the subjects. Here are the percentages:\n" +
-                    "Subject 1: " + subject1Marks +"%"+ "\nSubject 2: " + subject2Marks +"%"+ "\nSubject 3: " + subject3Marks +"%"+
-                    "\nTotal Percentage: " + totalPercentage+"%");
+                    "Subject 1: " + subject1Marks + "%" + "\nSubject 2: " + subject2Marks + "%" + "\nSubject 3: " + subject3Marks + "%" +
+                    "\nTotal Percentage: " + totalPercentage + "%");
         }
     }
 }
