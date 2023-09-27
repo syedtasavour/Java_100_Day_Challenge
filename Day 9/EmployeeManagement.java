@@ -15,6 +15,9 @@ class Employee {
     public int getSalary() {
         return salary;
     }
+    public Employee(){
+        salary = 65000;
+    }
 }
 
 public class EmployeeManagement {
@@ -31,7 +34,7 @@ public class EmployeeManagement {
         // Set details for employee2
         employee2.employeeId = 88;
         employee2.employeeName = "Employee2Working";
-        employee2.salary = 65000;
+        employee2.salary = 63000;
         employee2.joiningYear = 2005;
 
         // Print details for both employees
