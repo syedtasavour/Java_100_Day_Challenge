@@ -19,7 +19,7 @@ public class SquareCalculator {
         Square square = new Square();
 
         // Set the side length of the square
-        square.sideLength = 4;
+        square.sideLength = 3;
 
         // Calculate and print the area of the square
         System.out.println("Area of the square: " + square.calculateArea());
