@@ -1,48 +1,32 @@
-# Java 100 Day Challenge
+# Java 100-Day Challenge with Data Structures & Algorithms
 
-Welcome to the Java 100 Day Challenge repository! This repository is dedicated to a 100-day journey of learning and improving Java programming skills. Each day, you will find new challenges, tasks, or concepts related to Java.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Goals](#goals)
-- [Getting Started](#getting-started)
-- [Daily Structure](#daily-structure)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Overview
-
-This challenge is designed to help you deepen your understanding of Java programming by providing daily exercises and projects. Whether you're a beginner or an experienced Java developer, this challenge will enhance your skills and boost your confidence in Java.
+Welcome to my 100-day learning challenge where I am focusing on mastering Java programming language and honing my skills in Data Structures & Algorithms (DSA). During this journey, I will be committing to learning and practicing daily, and I'll be sharing my progress by uploading programs to GitHub.
 
 ## Goals
+- **Mastering Java**: Understanding the fundamentals of Java programming, including syntax, concepts, and best practices.
 
-- Improve your understanding of Java fundamentals, syntax, and best practices.
-- Enhance problem-solving skills by solving daily coding challenges.
-- Build practical projects to apply the knowledge gained during the challenge.
-- Engage with the Java community, share experiences, and learn from each other.
+- **Proficiency in DSA**: Learning and implementing various data structures and algorithms, and gaining proficiency in solving problems efficiently.
 
-## Getting Started
+- **Daily Progress Updates**: Upload a new Java program or DSA-related code every day on GitHub to showcase my progress and share knowledge with the community.
 
-To get started with the challenge, follow these steps:
+## Daily Routine
+1. **Learning Java (Days 1-30)**:
+   - Study Java concepts, syntax, and features.
+   - Work on practical exercises and small projects to apply the knowledge gained.
+   - Read relevant books, articles, or online tutorials to deepen understanding.
 
-1. Clone or fork this repository to your local machine.
-2. Set up your development environment with Java and any necessary tools.
-3. Start the challenge by tackling the tasks for Day 1.
+2. **Data Structures & Algorithms (Days 31-100)**:
+   - Study different data structures such as arrays, linked lists, trees, graphs, etc.
+   - Understand algorithmic concepts including sorting, searching, dynamic programming, and more.
+   - Solve algorithmic problems on platforms like LeetCode, HackerRank, or Codeforces.
 
-## Daily Structure
+## Progress Tracking
+I will maintain a daily log of my learning progress, documenting the topics covered, challenges faced, and achievements. These logs will be uploaded to my GitHub repository.
 
-Each day, you will find a new folder or file corresponding to that day's challenge. Inside each day's folder, you'll typically find:
+## GitHub Repository
+- Repository Name: [Java_100_Day_Challenge](https://github.com/syedtasavour/Java_100_Day_Challenge)
 
-- A README with the challenge description and requirements.
-- Java code or project files related to the challenge.
+## Contribution and Support
+I welcome feedback, suggestions, and contributions from the community. Feel free to open issues or submit pull requests to help me improve and grow during this learning journey.
 
-Feel free to customize and modify the challenges to suit your learning objectives.
-
-## Contributing
-
-Contributions are welcome! If you have ideas for challenges, improvements, or fixes, please open an issue or create a pull request following our [contribution guidelines](CONTRIBUTING.md).
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
+Thank you for joining me on this exciting 100-day Java and DSA learning challenge! Let's code and learn together!
