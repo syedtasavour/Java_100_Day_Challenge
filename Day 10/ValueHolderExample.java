@@ -1,41 +1,41 @@
-// Base class
-class BaseClass {
-    int baseValue;
+// ValueHolder class representing a value holder
+class ValueHolder {
+    private int value;
 
-    // Method to get the value of baseValue
-    public int getBaseValue() {
-        return baseValue;
+    // Method to get the value
+    public int getValue() {
+        return value;
     }
 
-    // Method to set the value of baseValue
-    public void setBaseValue(int baseValue) {
-        this.baseValue = baseValue;
+    // Method to set the value
+    public void setValue(int value) {
+        this.value = value;
     }
 
     // Method to print a message
     public void printMessage() {
-        System.out.println("I am a Constructor");
+        System.out.println("I am a ValueHolder");
     }
 }
 
-// Derived class extending the BaseClass
-class DerivedClass extends BaseClass {
-    int derivedValue;
-    // No methods or variables are defined in this class yet
+// DerivedValueHolder class extending the ValueHolder class
+class DerivedValueHolder extends ValueHolder {
+    private int derivedValue;
+    // No additional methods or variables are defined in this class yet
 }
 
-public class Main {
+public class ValueHolderExample {
     public static void main(String[] args) {
-        // BaseClass
-        BaseClass b = new BaseClass();
-        b.setBaseValue(4);
-        b.printMessage();
-        System.out.println(b.getBaseValue());
-        // DerivedClass
-        DerivedClass d = new DerivedClass();
-        d.derivedValue = b.baseValue*2;
-        System.out.println(d.derivedValue);
-         d.printMessage();
+        // Create a ValueHolder instance
+        ValueHolder valueHolder = new ValueHolder();
+        valueHolder.setValue(4);
+        valueHolder.printMessage();
+        System.out.println("Value: " + valueHolder.getValue());
 
-    } 
+        // Create a DerivedValueHolder instance
+        DerivedValueHolder derivedValueHolder = new DerivedValueHolder();
+        derivedValueHolder.setValue(valueHolder.getValue() * 2);
+        System.out.println("Derived Value: " + derivedValueHolder.getValue());
+        derivedValueHolder.printMessage();
+    }
 }
