@@ -41,7 +41,7 @@ class NumberGuessingGame {
     }
 }
 
-public class main {
+public class NumberGuessing {
     public static void main(String[] args) {
         int maxGuesses = 5;  // Maximum number of guesses
         NumberGuessingGame game = new NumberGuessingGame(100);
