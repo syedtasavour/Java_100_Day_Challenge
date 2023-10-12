@@ -1,49 +1,39 @@
-class Rectangle {
-    protected double length;
-    protected double width;
-
-    public Rectangle(double length, double width) {
-        this.length = length;
-        this.width = width;
+// Abstract base class representing a greeting
+abstract class GreetingBase {
+    // Constructor for the base class
+    public GreetingBase() {
+        System.out.println("I am Base constructor");
     }
 
-    public double calculateArea() {
-        return length * width;
+    // Method to say hi
+    public void sayHi() {
+        System.out.println("I am here");
     }
 
-    public double calculatePerimeter() {
-        return 2 * (length + width);
-    }
+    // Abstract method for a greeting
+    abstract public void greet();
 }
 
-class Cuboid extends Rectangle {
-    protected double height;
-
-    public Cuboid(double length, double width, double height) {
-        super(length, width);
-        this.height = height;
-    }
-
-    public double calculateVolume() {
-        return length * width * height;
-    }
-
+// Class extending the base class to provide a specific greeting
+class MorningGreeting extends GreetingBase {
     @Override
-    public double calculateArea() {
-        // Surface area of a cuboid
-        return 2 * ((length * width) + (width * height) + (height * length));
+    public void greet() {
+        System.out.println("Good Morning");
     }
 }
 
-public class main {
+// Abstract base class for morning greetings
+abstract class AbstractMorningGreeting extends GreetingBase {
+    public void displayMorningMessage() {
+        System.out.println("Good Morning");
+    }
+}
+
+public class GreetingApp {
     public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle(5, 10);
-        System.out.println("Rectangle Area: " + rectangle.calculateArea());
-        System.out.println("Rectangle Perimeter: " + rectangle.calculatePerimeter());
-
-        Cuboid cuboid = new Cuboid(5, 10, 3);
-        System.out.println("\nCuboid Area: " + cuboid.calculateArea());
-        System.out.println("Cuboid Volume: " + cuboid.calculateVolume());
-        s
+        GreetingBase greeting = new MorningGreeting();
+        greeting.sayHi();
+        greeting.greet();
     }
 }
+
