@@ -1,6 +1,6 @@
 abstract class WritingInstrument {
-    abstract public void write(); // Abstract method to write
-    abstract public void refill(); // Abstract method to refill
+    abstract void write(); // Abstract method to write
+    abstract void refill(); // Abstract method to refill
 }
 
 class Pen extends WritingInstrument {
