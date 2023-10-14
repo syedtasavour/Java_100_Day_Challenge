@@ -1,33 +1,36 @@
-class Monkey {
-    // Method to make the monkey jump
+class Animal {
     void jump() {
-        System.out.println("Monkey is jumping");
+        System.out.println("Animal is jumping");
     }
 
-    // Method to make the monkey bite
     void bite() {
-        System.out.println("Monkey is biting");
+        System.out.println("Animal is biting");
     }
 }
 
-class Human extends Monkey {
-    // Method to make the human eat
-    void eat() {
+interface BasicActions {
+    void eat();
+
+    void sleep();
+}
+
+class Human extends Animal implements BasicActions {
+    @Override
+    public void eat() {
         System.out.println("Human is eating");
     }
-
-    // Method to make the human sleep
-    void sleep() {
+    @Override
+    public void sleep() {
         System.out.println("Human is sleeping");
     }
 }
 
 public class InheritanceExample {
     public static void main(String[] args) {
-        Human humanObj = new Human();  // Creating an instance of the Human class
-        humanObj.sleep();  // Calling the sleep method of the Human class
-        humanObj.bite();   // Calling the bite method inherited from the Monkey class
-        humanObj.eat();    // Calling the eat method of the Human class
-        humanObj.jump();   // Calling the jump method inherited from the Monkey class
+        Human human = new Human();  // Creating an instance of the Human class
+        human.sleep();  // Calling the sleep method of the Human class
+        human.bite();   // Calling the bite method inherited from the Animal class
+        human.eat();    // Calling the eat method of the Human class
+        human.jump();   // Calling the jump method inherited from the Animal class
     }
 }
