@@ -33,42 +33,6 @@ class WelcomeThread extends Thread {
                 e.printStackTrace();  // Print stack trace if interrupted
             }
 
-            count++;
-// Class representing a thread that prints "Good Morning" and a number
-class GoodMorningThread extends Thread {
-    public GoodMorningThread() {
-        int count = 0;  // Initialize a counter for the messages
-
-        // Print "Good Morning" and a number
-        while (count < 1) {
-            System.out.println("Good Morning " + count);
-
-            try {
-                Thread.sleep(1);  // Introduce a 1 millisecond delay
-            } catch (InterruptedException e) {
-                e.printStackTrace();  // Print stack trace if interrupted
-            }
-
-            count++;  // Increment the counter
-        }
-    }
-}
-
-// Class representing a thread that prints "Welcome" and a number
-class WelcomeThread extends Thread {
-    public WelcomeThread() {
-        int count = 0;  // Initialize a counter for the messages
-
-        // Print "Welcome" and a number
-        while (count < 1) {
-            System.out.println("Welcome " + count);
-
-            try {
-                Thread.sleep(1);  // Introduce a 1 millisecond delay
-            } catch (InterruptedException e) {
-                e.printStackTrace();  // Print stack trace if interrupted
-            }
-
             count++;  // Increment the counter
         }
     }
