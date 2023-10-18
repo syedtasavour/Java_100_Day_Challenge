@@ -1,25 +1,39 @@
- class MyThreadRunnable implements Runnable {
+class MyThreadRunnable implements Runnable {
     public void run() {
-        int i = 0;
-        while(i<4000){
-        System.out.println("I am Thread Zero Not Threat");i++;}
-    }
-} class MyThreadRunnable1 implements Runnable {
-    public void run() {
-        int i = 0;
-        while(i<400099){
-        System.out.println("I am Thread one Not Threat");i++;}
+        int count = 0;  // Initialize a counter for Thread Zero
+        int maxCount = 4000;  // Maximum count for Thread Zero
+        
+        while (count < maxCount) {
+            System.out.println("I am Thread Zero");  // Print a message for Thread Zero
+            count++;
+        }
     }
 }
 
+class MyThreadRunnable1 implements Runnable {
+    public void run() {
+        int count = 0;  // Initialize a counter for Thread One
+        int maxCount = 400099;  // Maximum count for Thread One
+        
+        while (count < maxCount) {
+            System.out.println("I am Thread One");  // Print a message for Thread One
+            count++;
+        }
+    }
+}
 
 public class ThreadingMeth2 {
     public static void main(String[] args) {
-        MyThreadRunnable t = new MyThreadRunnable();
-        Thread n = new Thread(t);
-        MyThreadRunnable1 t1 = new MyThreadRunnable1();
-        Thread n1 = new Thread(t1);  
-        n.start();
-        n1.start();       
+        // Create instances of the Runnable classes
+        MyThreadRunnable threadZeroRunnable = new MyThreadRunnable();
+        MyThreadRunnable1 threadOneRunnable = new MyThreadRunnable1();
+        
+        // Create threads using the Runnable instances
+        Thread threadZero = new Thread(threadZeroRunnable);
+        Thread threadOne = new Thread(threadOneRunnable);
+        
+        // Start the threads
+        threadZero.start();
+        threadOne.start();
     }
 }
