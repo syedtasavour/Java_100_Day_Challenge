@@ -20,8 +20,14 @@ public class linearSearch {
 
         }return arr;
     }
-    public static boolean ww(int x) {
-        
+    public static boolean isPalindrome(int x) {
+        int save = x;
+        int n = 0;
+        int y =0;
+        while(n>0){
+        n = x%10;
+        y = y * 10 +n;
+        x = x/10;
         }if(save==n){
             return true;
 
@@ -33,7 +39,7 @@ public class linearSearch {
     public static void main(String args[]){
         int m[]= {1,22,4,5,6,7,8564,34,53};
         int key =3;
-        boolean n = ww(121);
+        boolean n= isPalindrome(121);
         System.out.print(n);
     }
 }
