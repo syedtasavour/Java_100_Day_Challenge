@@ -12,4 +12,4 @@ public class linearSearch {
         int key =3;
         System.out.print(lin(m,key));
     }
-} 
+}
